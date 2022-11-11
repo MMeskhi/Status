@@ -304,6 +304,7 @@ header .hamburger {
 	border: none;
 	background-color: initial;
 	cursor: pointer;
+	display: none;
 }
 
 header .hamburger .menu-open,
@@ -320,6 +321,10 @@ header .hamburger .menu-close {
 
 	header .hamburger .switch-btn {
 		display: flex;
+	}
+
+	header .hamburger {
+		display: block;
 	}
 
 	.logo {
