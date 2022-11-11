@@ -12,7 +12,7 @@
 
 <body>
 	<header>
-		<div class="container">
+		<div class="header container">
 			<div class="d-flex-between">
 				<a href="#" class="logo">
 					<img src="assets/img/icons/logo.svg" alt="" />
@@ -39,15 +39,47 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="lang d-flex">
-					<a href="#" class="active">geo</a>
-					<a href="#">eng</a>
-					<a href="#">rus</a>
+				<div class="lang d-flex main-lang">
+					<a class="active lang-main">Geo</a>
+					<div class="lang-drp">
+						<a href="#" class="active">Eng</a>
+						<a href="#" class="active">Rus</a>
+					</div>
 				</div>
-				<div class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
+				<button class="hamburger">
+					<img src="assets/img/icons/menu.svg" alt="Menu" class="menu-open switch-btn">
+					<img src="assets/img/icons/x.svg" alt="Close" class="menu-close">
+				</button>
+				<div class="navbar-mobile">
+					<div class="navbar-mobile-cont">
+						<div class="lang d-flex">
+							<a class="active lang-main">Geo</a>
+							<div class="lang-drp">
+								<a href="#" class="active">Eng</a>
+								<a href="#" class="active">Rus</a>
+							</div>
+						</div>
+						<ul class="d-flex-centered">
+							<li class="navbar-li active">
+								<a href="#">მთავარი</a>
+							</li>
+							<li class="navbar-li">
+								<a href="#">სერვისები</a>
+							</li>
+							<li class="navbar-li">
+								<a href="#">ექიმები</a>
+							</li>
+							<li class="navbar-li">
+								<a href="#">სიახლეები</a>
+							</li>
+							<li class="navbar-li">
+								<a href="#">ისტორია</a>
+							</li>
+							<li class="navbar-li">
+								<a href="#">კონტაქტი</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
