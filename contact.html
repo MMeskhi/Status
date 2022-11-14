@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STATUS</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body id="contact">
+    <header>
+        <div class="header container">
+            <div class="d-flex-between">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/icons/logo.svg" alt="" />
+                </a>
+                <nav class="navbar">
+                    <ul class="d-flex-centered">
+                        <li class="navbar-li">
+                            <a href="index.html">მთავარი</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="services.html">სერვისები</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="doctors.html">ექიმები</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="#">სიახლეები</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="history.html">ისტორია</a>
+                        </li>
+                        <li class="navbar-li active">
+                            <a href="contact.html">კონტაქტი</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="lang d-flex main-lang">
+                    <a class="active lang-main">Geo</a>
+                    <div class="lang-drp">
+                        <a href="#" class="active">Eng</a>
+                        <a href="#" class="active">Rus</a>
+                    </div>
+                </div>
+                <button class="hamburger">
+                    <img src="assets/img/icons/menu.svg" alt="Menu" class="menu-open switch-btn">
+                    <img src="assets/img/icons/x.svg" alt="Close" class="menu-close">
+                </button>
+                <div class="navbar-mobile">
+                    <div class="navbar-mobile-cont">
+                        <div class="lang d-flex">
+                            <a class="active lang-main">Geo</a>
+                            <div class="lang-drp">
+                                <a href="#" class="active">Eng</a>
+                                <a href="#" class="active">Rus</a>
+                            </div>
+                        </div>
+                        <ul class="d-flex-centered">
+                            <li class="navbar-li">
+                                <a href="index.html">მთავარი</a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="services.html">სერვისები</a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="doctors.html">ექიმები</a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="#">სიახლეები</a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="history.html">ისტორია</a>
+                            </li>
+                            <li class="navbar-li active">
+                                <a href="contact.html">კონტაქტი</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-hero">
+        <div class="section-hero-header d-flex-centered">
+            <div class="section-hero-cont d-flex container">
+                <img src="assets/img/icons/home.svg" alt="">
+                <img src="assets/img/icons/arrow-right-red.svg" alt="">
+                <a href="#" class="active">კონტაქტი</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="contact-cont">
+            <div class="contact-form-cont d-flex">
+                <section class="section-header d-flex-between">
+                    <h3>კონტაქტი</h3>
+                </section>
+                <form id="contactForm" class="contact-box" action="" method="post">
+                    <div class="contact-formfield">
+                        <div class="contact-fields">
+                            <h5>სახელი</h5>
+                            <div class="name-field form-sizes">
+                                <input id="userName" type="text" placeholder="შეიყვანეთ სახელი" required minlength="5"
+                                    maxlength="25">
+                            </div>
+                            <h5>ელ.ფოსტა</h5>
+                            <div class="email-field form-sizes">
+                                <input id="userEmail" type="email" placeholder="შეიყვანეთ ელ.ფოსტა" required
+                                    minlength="5" maxlength="64">
+                            </div>
+                            <h5>თემა</h5>
+                            <div class="subject-field form-sizes">
+                                <input id="subject" type="text" placeholder="შეიყვანეთ თემა" required minlength="5"
+                                    maxlength="25">
+                            </div>
+                        </div>
+                        <h5>ტექსტი</h5>
+                        <div class="contact-message">
+                            <div class="message-field">
+                                <input id="userMessage" type="text" placeholder="შეიყვანეთ შეტყოფინება" required
+                                    minlength="5" maxlength="500">
+                            </div>
+                        </div>
+                        <div class="contact-send">
+                            <button id="contactSubmit" type="submit">გაგზავნა</button>
+                            <div class="contact-warning">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="map-cont">
+                <div class="contact-us">
+                    <div class="cnt">
+                        <span>საკონტაქტო</span>
+                        <a href="tel:0322 732 732">0322 732 732</a>
+                    </div>
+                    <div class="cnt">
+                        <span>ელ.ფოსტა</span>
+                        <a href="mailto: Status@Clinic.com">Status@Clinic.com</a>
+                    </div>
+                    <div class="cnt">
+                        <span>მისამართი</span>
+                        <a href="https://goo.gl/maps/Dzu1RJ3g5DiA15yn8" target="_blank" rel="noopener noreferrer">ქ.
+                            თბილისის,მიხეილ ჭიაურელის ქ., N7</a>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d743.885613750229!2d44.7756992!3d41.7735217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446d929f33c56b%3A0x5da3632e2b29183c!2sMikheil%20Chiaureli%20St%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1668432212635!5m2!1sen!2sge"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_grid">
+                <div class="footer-contact">
+                    <a href="#">
+                        <img class="footer-logo" src="assets/img/icons/logo.svg" alt="" />
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">0322 732 732</a>
+                        </li>
+                        <li>
+                            <a href="#">Status@Clinic.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul class="d-flex-centered">
+                        <li class="navbar-li">
+                            <a href="#">მთავარი</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="#">სერვისები</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="#">ექიმები</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="#">სიახლეები</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="#">ისტორია</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="#">კონტაქტი</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-socials">
+                    <ul class="d-flex align-items-end">
+                        <li class="">
+                            <a href="#">facebook</a>
+                        </li>
+                        <li class="">
+                            <a href="#">instagram</a>
+                        </li>
+                        <li class="">
+                            <a href="#">twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-smartweb d-flex-centered">
+                    <span> Created by <span class="smartweb">Smartweb</span> </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

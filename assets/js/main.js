@@ -1,38 +1,3 @@
-function heroSlider() {
-  const swiper = new Swiper(".hero_swiper", {
-    navigation: {
-      nextEl: ".hero_slider-next",
-      prevEl: ".hero_slider-prev",
-    },
-    slidesPerView: 1,
-    spaceBetween: 10,
-    autoplay: {
-      delay: 10000,
-    },
-  });
-}
-function mainDoctorsSlider() {
-  const swiper = new Swiper(".main_doctors-swiper", {
-    breakpoints: {
-      320: {
-        slidesPerView: 1.4,
-        spaceBetween: 12,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 12,
-        grabCursor: true,
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 16,
-      },
-    },
-  });
-}
-heroSlider();
-mainDoctorsSlider();
-
 //Language switcher
 const langSwitcher = document.querySelector(".lang");
 const langMain = document.querySelector(".lang-main");
@@ -97,3 +62,95 @@ function openSidebar() {
 }
 
 mobileHamburger.addEventListener("click", openSidebar);
+
+//Contact from
+const contactWarning = document.querySelector(".contact-warning");
+const contactSubmit = document.getElementById("contactSubmit");
+
+const userForm = document.getElementById("contactForm");
+const userName = document.getElementById("userName");
+const userEmail = document.getElementById("userEmail");
+const subject = document.getElementById("subject");
+const userMessage = document.getElementById("userMessage");
+
+if (document.getElementById("contact")) {
+  userForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userData = {
+      name: userName.value,
+      email: userEmail.value,
+      subject: subject.value,
+      message: userMessage.value,
+    };
+    console.log(userData);
+    formData(userData);
+  });
+}
+
+function formData(userData) {
+  fetch("", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(userData),
+  })
+    .then(async (response) => {
+      if (response.status == 200) {
+        contactWarning.innerHTML = "მესიჯი წარმატებით გაიგზავნა.";
+        userForm.style.pointerEvents = "none";
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      contactWarning.innerHTML = "მოხდა შეცდომა!";
+      console.log(error);
+    })
+    .then((data) => {
+      console.log(data);
+      setTimeout(() => {
+        userForm.reset();
+        userForm.style.pointerEvents = "";
+        contactWarning.innerHTML = "";
+      }, 10000);
+    });
+}
+
+//Sliders
+if (document.getElementById("mainPage")) {
+  function heroSlider() {
+    const swiper = new Swiper(".hero_swiper", {
+      navigation: {
+        nextEl: ".hero_slider-next",
+        prevEl: ".hero_slider-prev",
+      },
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 10000,
+      },
+    });
+  }
+  function mainDoctorsSlider() {
+    const swiper = new Swiper(".main_doctors-swiper", {
+      breakpoints: {
+        320: {
+          slidesPerView: 1.4,
+          spaceBetween: 12,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 12,
+          grabCursor: true,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 16,
+        },
+      },
+    });
+  }
+  heroSlider();
+  mainDoctorsSlider();
+}
