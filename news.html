@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STATUS</title>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body>
+<body id="news">
     <header>
         <div class="header container">
             <div class="d-flex-between">
@@ -24,10 +25,10 @@
                         <li class="navbar-li">
                             <a href="services.html">სერვისები</a>
                         </li>
-                        <li class="navbar-li active">
+                        <li class="navbar-li">
                             <a href="doctors.html">ექიმები</a>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li active">
                             <a href="news.html">სიახლეები</a>
                         </li>
                         <li class="navbar-li">
@@ -65,10 +66,10 @@
                             <li class="navbar-li">
                                 <a href="services.html">სერვისები</a>
                             </li>
-                            <li class="navbar-li active">
+                            <li class="navbar-li">
                                 <a href="doctors.html">ექიმები</a>
                             </li>
-                            <li class="navbar-li">
+                            <li class="navbar-li active">
                                 <a href="news.html">სიახლეები</a>
                             </li>
                             <li class="navbar-li">
@@ -88,103 +89,49 @@
         <div class="section-hero-header d-flex-centered">
             <div class="section-hero-cont d-flex container">
                 <img src="assets/img/icons/home.svg" alt="">
-                <img src="assets/img/icons/arrow-right.svg" alt="">
-                <a href="#" class="">ექიმები</a>
                 <img src="assets/img/icons/arrow-right-red.svg" alt="">
-                <a href="#" class="active">ელენე ახვლედიანი</a>
+                <a href="#" class="active">სიახლეები</a>
             </div>
         </div>
     </section>
 
     <main class="container">
-        <div class="doctor-cont d-flex">
-            <div class="doctor-pic">
-                <img src="assets/img/doctor1.png" alt="">
-            </div>
-            <div class="doctor-about d-flex">
-                <div class="d-flex header">
-                    <h3>ელენე ახვლედიანი</h3>
-                    <span>მამოლოგი</span>
-                </div>
-                <hr>
-                <div class="d-flex contact">
-                    <h6>საკონტაქტო ინფომრაცია</h6>
-                    <a href="tel:+995 543 234 567">+995 543 234 567</a>
-                    <a href="mailto: Eleneakhvlediani@gmail.com">Eleneakhvlediani@gmail.com</a>
-                </div>
-                <div class="doctor-abt d-flex">
-                    <h4>განათლება:</h4>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            1989-1996 წწ. - თბილისის სახელმწიფო სამედიცინო ინსტიტუტი; სამკურნალო ფაკულტეტი: ზოგადი
-                            პროფილის ექიმი
-                        </p>
-                    </div>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            2007 წ. - კემბრიჯის საერთაშორისო კოლეჯი- თანამედროვე მენეჯმენტი/ადმინისტრირება.-
-                            საერთაშორისო
-                            დიპლომი
-                        </p>
-                    </div>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            2010-2011 წწ. - საერთაშორისო სერთიფიკატი (2 თვიანი სტაჟირება თურქეთში, ქ. ანკარა,
-                            კლინიკა
-                            HGTP
-                            საუნივერსიტეტო კლინიკა; ალერგიის და კლ. იმუნოლოგიის დეპარტამენტი)
-                        </p>
-                    </div>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            2011-2012 წწ. - საერთაშორისო სერთიფიკატი (2 თვიანი სტაჟირება თურქეთში, ქ. ანკარა,
-                            ცენტრალური
-                            საუნივერსიტეტო კლინიკა, დერმატოლოგიის დეპარტამენტი)
-                        </p>
-                    </div>
-                </div>
-                <div class="doctor-abt d-flex">
-                    <h4>სამუშაო გამოცდილება:</h4>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            1994-1995 წწ - ონკოლოგიური საავადმყოფო - ექთანი
-                        </p>
-                    </div>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            1996-1997 წწ - რესპუბლიკური ცენტრალური საავადმყოფო - თერაპიული განყოფილება; ექიმი-ინტერნი.
-                        </p>
-                    </div>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            1997-2003 წწ - ცენტრალური რესპუბლიკური საავადმყოფო - ნეფროლოგიური განყოფილება;
-                            ექიმი-ნეფროლოგი
-                        </p>
-                    </div>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            2003-2008 წწ - ცენტრალური რესპუბლიკური საავადმყოფო - ასთმის, ალერგიის და კლინიკური
-                            იმუნოლოგიის ცენტრი: ექიმი-ალერგოლოგი
-                        </p>
-                    </div>
-                    <div class="abt">
-                        <div class="circle"></div>
-                        <p>
-                            2008 წ - შპს „ავერსის კლინიკა“ ცენტრალური ფილიალი: ექიმი-ალერგოლოგი
-                        </p>
+        <section class="section-header d-flex-between">
+            <h3>სიახლეები</h3>
+        </section>
+        <div class="news-cont">
+            <div class="news-main-slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="bg" id="bgA">
+                                <div class="bg-cont">
+                                    <h4>უფასო ოფთალმოლოგიური კვლევები პენსიონერთათვის</h4>
+                                    <p>
+                                        აქციის ფარგლებში ყველა პენსიონერს უფასოდ ჩაუტარდება როგორც ექიმის კონსულტაცია,
+                                        ასევე
+                                        ყველა საჭირო კვლევა მიღება წარმოებს…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="bg" id="bgB">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="bg" id="bgC">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
     </main>
 
     <footer>
@@ -211,10 +158,10 @@
                         <li class="navbar-li">
                             <a href="services.html">სერვისები</a>
                         </li>
-                        <li class="navbar-li active">
+                        <li class="navbar-li">
                             <a href="doctors.html">ექიმები</a>
                         </li>
-                        <li class="navbar-li">
+                        <li class="navbar-li active">
                             <a href="news.html">სიახლეები</a>
                         </li>
                         <li class="navbar-li">
@@ -244,6 +191,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

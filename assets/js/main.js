@@ -132,6 +132,9 @@ if (document.getElementById("mainPage")) {
       },
     });
   }
+  heroSlider();
+}
+if (document.querySelectorAll("mainPage, lab")) {
   function mainDoctorsSlider() {
     const swiper = new Swiper(".main_doctors-swiper", {
       breakpoints: {
@@ -151,6 +154,39 @@ if (document.getElementById("mainPage")) {
       },
     });
   }
-  heroSlider();
   mainDoctorsSlider();
+}
+if (document.getElementById("newsIn")) {
+  function newsInSlider() {
+    const swiper = new Swiper(".news-in-right .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 20000,
+      },
+    });
+  }
+  newsInSlider();
+}
+
+if (document.getElementById("news")) {
+  function newsSlider() {
+    const swiper = new Swiper(".news-main-slider .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+  newsSlider();
 }
