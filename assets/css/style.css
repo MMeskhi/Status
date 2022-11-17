@@ -299,6 +299,25 @@ header {
 	color: var(--primary);
 }
 
+.navbar-li.in-active a {
+	color: var(--primary);
+
+	position: relative;
+}
+
+.navbar-li.in-active a::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--red8);
+
+	position: absolute;
+	left: 50%;
+	bottom: -13px;
+	transform: translate(-50%);
+}
+
 .navbar-mobile .navbar-li.active a {
 	color: var(--black4);
 }
