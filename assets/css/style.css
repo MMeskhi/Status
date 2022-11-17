@@ -1556,7 +1556,7 @@ input:focus {
 }
 
 .laboratory {
-	margin-top: 48px;
+	margin-top: 32px;
 	flex-direction: column;
 }
 
@@ -1617,6 +1617,10 @@ input:focus {
 	color: var(--black);
 }
 
+.in-laboratory .main_doctors-swiper {
+	width: 90%;
+}
+
 @media (max-width: 1024px) {
 	.laboratory-cont {
 		flex-direction: column-reverse;
@@ -1632,12 +1636,33 @@ input:focus {
 		width: 100%;
 		height: 800px;
 	}
+
+	.in-laboratory .main_doctors-swiper {
+		width: 100%;
+	}
+
+	.laboratory-cont {
+		gap: 0;
+	}
 }
 
 @media (max-width: 700px) {
 	.laboratory-left .lab-text {
 		max-width: none;
 		height: 100%;
+	}
+
+	.laboratory-right {
+		height: 254px;
+		background-position-y: -70px;
+	}
+
+	.laboratory-header h3 {
+		font-size: 24px;
+	}
+
+	.laboratory-header .card-icon {
+		margin-right: 16px;
 	}
 }
 
@@ -1828,11 +1853,20 @@ input:focus {
 	}
 }
 
+.news-main-slider {
+	position: relative;
+	max-width: 1440px;
+	width: 90%;
+	margin: auto;
+}
+
 .news-main-slider .swiper {
 	width: 100%;
-	height: 513px;
+	height: 611px;
 	box-shadow: 0px 0px 30px #F5AD001A;
 	border-radius: 18px;
+	overflow-y: visible;
+	overflow-x: hidden;
 }
 
 .news-main-slider .swiper-button-next::after {
@@ -1860,14 +1894,14 @@ input:focus {
 }
 
 .news-main-slider .swiper-button-prev {
-	top: 50%;
-	left: 10px;
+	top: 40%;
+	left: -28px;
 	right: auto;
 }
 
 .news-main-slider .swiper-button-next {
-	top: 50%;
-	right: 10px;
+	top: 40%;
+	right: -28px;
 	left: auto;
 }
 
@@ -1893,6 +1927,37 @@ input:focus {
 	border-radius: 18px;
 }
 
+.news-main-slider .bg-cont {
+	flex-direction: column;
+	gap: 16px;
+	max-width: 592px;
+	width: 100%;
+	height: 196px;
+	background: #FBFBFB;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	padding: 32px 28px;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.news-main-slider .bg-cont h4 {
+	font-weight: 600;
+	font-size: 18px;
+	max-width: 422.43px;
+	width: 100%;
+}
+
+.news-main-slider .bg-cont p {
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--black6);
+	max-width: 422.43px;
+	width: 100%;
+}
+
 #bgA {
 	background-image: url(../img/news.png);
 }
@@ -1903,4 +1968,135 @@ input:focus {
 
 #bgC {
 	background-image: url(../img/news.png);
+}
+
+.news-cont .section-header {
+	margin-bottom: 20px;
+}
+
+.news-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 44px;
+	gap: 16px;
+}
+
+.news-article {
+	max-width: 469px;
+	width: 100%;
+	height: 100%;
+	background: #FBFBFB;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	padding: 16px 16px 34px 16px;
+}
+
+.news-article-cont {
+	flex-direction: column;
+}
+
+.news-article-cont h4 {
+	margin: 12px 0 16px 0;
+	font-weight: 600;
+	font-size: 18px;
+	color: var(--black);
+	max-width: 421px;
+	width: 100%;
+}
+
+.news-article-cont p {
+	margin-bottom: 24px;
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--black6);
+}
+
+.news-article-cont a {
+	font-weight: 500;
+	font-size: 14px;
+	color: var(--red8);
+	border-bottom: solid 1px;
+	width: 119px;
+}
+
+.news-article-cont img {
+	max-width: 437px;
+	width: 100%;
+	height: 319px;
+	border-radius: 16px;
+	margin-bottom: 12px;
+}
+
+@media (max-width: 1024px) {
+	.news-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.news-main-slider .swiper-button-prev {
+		left: 28px;
+	}
+
+	.news-main-slider .swiper-button-next {
+		right: 28px;
+	}
+
+	.news-main-slider {
+		width: 100%;
+		padding: 0 16px;
+	}
+}
+
+@media (max-width: 700px) {
+	.news-article-cont img {
+		height: 270px;
+	}
+
+	.news-cont {
+		margin-top: 120px;
+	}
+
+	.news-main-slider .swiper-slide .bg {
+		height: 379px;
+	}
+
+	.news-main-slider .bg-cont {
+		background: var(--white);
+		border: none;
+		bottom: 24px;
+	}
+
+	.news-grid {
+		margin-top: -24px;
+	}
+
+	.news-main-slider .swiper-button-prev {
+		top: 30%;
+		left: 10px;
+	}
+
+	.news-main-slider .swiper-button-next {
+		top: 30%;
+		right: 10px;
+	}
+
+	.news-main-slider {
+		max-width: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.news-main-slider .swiper {
+		border-radius: 0;
+	}
+
+	.news-main-slider .swiper-slide .bg {
+		border-radius: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.news-grid {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
 }

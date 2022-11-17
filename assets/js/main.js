@@ -178,10 +178,10 @@ if (document.getElementById("news")) {
     const swiper = new Swiper(".news-main-slider .swiper", {
       slidesPerView: 1,
       spaceBetween: 50,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 10000,
+      //   disableOnInteraction: false,
+      // },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
