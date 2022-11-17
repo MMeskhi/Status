@@ -1510,22 +1510,28 @@ input:focus {
 .doctor-abt .abt {
 	display: flex;
 	align-items: center;
+
+	position: relative;
+	padding-left: 22px;
 }
 
-.doctor-abt .abt p {
+.doctor-abt .abt-ul {
 	display: flex;
-	max-width: 688px;
-	width: 100%;
-	height: 44px;
-	align-items: center;
+	flex-direction: column;
+	gap: 12px;
 }
 
-.doctor-abt .abt .circle {
+.doctor-abt ul li::before {
+	content: "";
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
 	background: var(--red8);
-	margin-right: 22px;
+
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0%, -50%);
 }
 
 @media (max-width: 1024px) {
@@ -1537,10 +1543,6 @@ input:focus {
 	.doctor-abt {
 		margin-left: 0;
 		padding: 24px 16px;
-	}
-
-	.doctor-abt .abt p {
-		height: 100%;
 	}
 
 	.doctor-about hr {
